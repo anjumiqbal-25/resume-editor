@@ -1,0 +1,15 @@
+
+streamlit
+python_dotenv
+openai
+pypdf    #this will help to read the resume in form of pdf file
+langchain
+langchain-openai
+langgraph
+
+
+
+
+
+
+
