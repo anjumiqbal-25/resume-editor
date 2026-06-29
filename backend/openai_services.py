@@ -1,27 +1,11 @@
-# from openai import OpenAI
-# from openai import OpenAI
-# from config import OPENAI_API_KEY 
-# from config import MODEL
 
-# client = OpenAI(api_key=OPENAI_API_KEY)
-
-# def get_completion(prompt):
-#     response = client.chat.completions.create(
-#     model=MODEL,
-#     messages=[{"role": "user", "content": prompt}]
-#     )
-
-#     return response.choices[0].message.content
-
-
- 
 
 
 
 import logging
 
 from openai import OpenAI, AuthenticationError, RateLimitError, APIConnectionError, APIStatusError
-from backend.config import OPENAI_API_KEY, MODEL
+from config import OPENAI_API_KEY, MODEL
 
 logger = logging.getLogger(__name__)
 

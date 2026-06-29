@@ -1,6 +1,6 @@
 import logging
-from utils.prompts import ats_prompt
-from services.openai_services import get_completion
+from backend.prompts import ats_prompt
+from backend.openai_services import get_completion
 
 logger = logging.getLogger(__name__)
 

@@ -1,11 +1,11 @@
 import logging
 import streamlit as st
-from services.ats_service import get_ats_analysis
-from services.qa_service import ask_resume_question
-from langgraph_agents.graph import build_graph
-from utils.pdf_utils import read_text_file
+from backend.ats_service import get_ats_analysis
+from backend.qa_service import ask_resume_question
+from backend.graph import build_graph
+from backend.pdf_utils import read_text_file
 from pypdf import PdfReader
-from utils.pdf_utils import extract_text_from_pdf
+from backend.pdf_utils import extract_text_from_pdf
 from backend.resume_db import create_tables, save_chat
 
 create_tables()

@@ -2,9 +2,9 @@
 import os, sys
 from langgraph.graph import StateGraph, START, END 
 
-from langgraph_agents.state import ApplicationState
-from langgraph_agents.llm import ask_llm
-from utils.pdf_utils import save_uploaded_file
+from backend.state import ApplicationState
+from backend.llm import ask_llm
+from backend.pdf_utils import save_uploaded_file
 
 
 #---------------RESUME REWRITER AGENT----------------------
