@@ -8,8 +8,10 @@ from pypdf import PdfReader
 from backend.pdf_utils import extract_text_from_pdf
 from backend.resume_db import create_tables, save_chat
 
+
+
 create_tables()
-save_chat("user", "Hi!")
+save_chat("role" ,"content")
 
 
 if "agent_result" not in st.session_state:
@@ -43,6 +45,9 @@ uploaded_file = st.file_uploader("Upload your resume (PDF format only):", type=[
 # ------------------ATS ANALYSIS BUTTON-------------------
 
 if st.button("Analyse Resume"):
+    if not resume_text.strip():
+         st.error("Please upload a Resume before Analysing.")
+         st.stop()
    
     # if uploaded_file is not None:
     #    resume_text = extract_text_from_pdf(uploaded_file)
