@@ -43,7 +43,7 @@ job_description = st.text_area("Enter the job description:")
 uploaded_file = st.file_uploader("Upload your resume (PDF format only):", type=["pdf"])
 
 # ------------------ATS ANALYSIS BUTTON-------------------
-
+resume_text=""
 if st.button("Analyse Resume"):
     if not resume_text.strip():
          st.error("Please upload a Resume before Analysing.")
