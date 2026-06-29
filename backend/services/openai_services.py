@@ -21,7 +21,7 @@
 import logging
 
 from openai import OpenAI, AuthenticationError, RateLimitError, APIConnectionError, APIStatusError
-from config import OPENAI_API_KEY, MODEL
+from backend.config import OPENAI_API_KEY, MODEL
 
 logger = logging.getLogger(__name__)
 

@@ -6,7 +6,7 @@ from langgraph_agents.graph import build_graph
 from utils.pdf_utils import read_text_file
 from pypdf import PdfReader
 from utils.pdf_utils import extract_text_from_pdf
-from resume_db import create_tables, save_chat
+from backend.resume_db import create_tables, save_chat
 
 create_tables()
 save_chat("user", "Hi!")
